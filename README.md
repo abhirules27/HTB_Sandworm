@@ -9,4 +9,14 @@ $ sudo nmap -sV (Version Detection) -sC (--script) -oN (Output File) nmap.txt 10
 
 # Step 2: Adding Site to Host File (https://ssa.htb/) 
 
-$ sudo nano 
+$ sudo nano /etc/hosts
+
+Add 10.10.11.218  ssa.htb
+
+And access the Host from browser
+
+# Step 3:
+$ sudo dirb https://ssa.htb
+
+Then open https://ssa.htb/admin in Browser
+
