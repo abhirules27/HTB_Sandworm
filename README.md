@@ -23,7 +23,9 @@ Then open https://ssa.htb/admin in Browser
 # Step 4:
 
 $ gpg --gen-key      // Generating Public Key
+
 Real Name: {{7*7}}
+
 Email: a@a.com
 
 $ gpg --armor --export a@a.com > Public_Key.asc    //Exporting the Generated Public Key
@@ -32,6 +34,9 @@ $ gpg --armor --export a@a.com > Public_Key.asc    //Exporting the Generated Pub
 
 $ echo "Test" > Payload.txt
 
+## Creating a Signed Payload File (Signed_Payload.txt) from Payload.txt using Public Key previously created 
+
+$ gpg --clear-sign --output Signed_Payload.txt Payload.txt
 
 
-
+* Left the box
